@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_N69YcEr4EeOjKOOrIu014g">
+  <modelElement href="HW08_ChatRoom.uml#_N0lqsEr4EeOjKOOrIu014g"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SFh7cEr4EeOjKOOrIu014g" targetItem="_SFk-wEr4EeOjKOOrIu014g" sourceItem="_SFgtUEr4EeOjKOOrIu014g"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SFkXsEr4EeOjKOOrIu014g" source="_SFk-wEr4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OrjH4Ur4EeOjKOOrIu014g"/>
+    <stereotypes xmi:id="_SFkXsUr4EeOjKOOrIu014g" name="Reference">
+      <modelElement href="HW08_ChatRoom.uml#_Orju8Er4EeOjKOOrIu014g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SFkXskr4EeOjKOOrIu014g" text=""/>
+    <sourceRole xmi:id="_SFkXs0r4EeOjKOOrIu014g" aggregationKind="NONE" name="">
+      <modelElement href="HW08_ChatRoom.uml#_OrjH4kr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SFkXtEr4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SFkXtUr4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SFkXtkr4EeOjKOOrIu014g" aggregationKind="NONE" name="users" navigable="true">
+      <modelElement href="HW08_ChatRoom.uml#_OfeawEr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_4J-GcEr5EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_OffB0Er4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SFkXt0r4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SFkXuEr4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+    </targetRole>
+  </edges>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_SFv94Er4EeOjKOOrIu014g" sourceAnchor="147.0,0.0" targetAnchor="147.0,148.0" dashed="true" superClass="_SFk-wEr4EeOjKOOrIu014g" subClass="_SF8LIEr4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OnK-MEr4EeOjKOOrIu014g"/>
+  </edges>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_SF2EgEr4EeOjKOOrIu014g" targetItem="_SF8LIEr4EeOjKOOrIu014g" sourceItem="_SF1dcEr4EeOjKOOrIu014g"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:AssociationVisual" xmi:id="_SF6V8Er4EeOjKOOrIu014g" source="_SF8LIEr4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OrrqwUr4EeOjKOOrIu014g"/>
+    <stereotypes xmi:id="_SF6V8Ur4EeOjKOOrIu014g" name="Reference">
+      <modelElement href="HW08_ChatRoom.uml#_OrsR0Er4EeOjKOOrIu014g"/>
+    </stereotypes>
+    <nameVisual xmi:id="_SF6V8kr4EeOjKOOrIu014g" text=""/>
+    <sourceRole xmi:id="_SF6V80r4EeOjKOOrIu014g" aggregationKind="NONE" name="">
+      <modelElement href="HW08_ChatRoom.uml#_Orrqwkr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SF6V9Er4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SF6V9Ur4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+    </sourceRole>
+    <targetRole xmi:id="_SF6V9kr4EeOjKOOrIu014g" aggregationKind="NONE" name="userList" navigable="true">
+      <modelElement href="HW08_ChatRoom.uml#_Op-akUr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_4J-GcUr5EeOjKOOrIu014g" name="LegacyStyledElement">
+        <modelElement href="HW08_ChatRoom.uml#_Op_BoEr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SF6V90r4EeOjKOOrIu014g" label="-"/>
+      <cardinality xmi:id="_SF6V-Er4EeOjKOOrIu014g" label="1..*" max="-1" min="1"/>
+    </targetRole>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SFgtUEr4EeOjKOOrIu014g" sourceConnectionVisual="_SFh7cEr4EeOjKOOrIu014g" text="Represents a chat room or &quot;conversation&quot;, an encapsulation of the IUsers involved in the conversation. &#xD;&#xA;Conceptually, essentially a dispatcher to a collection of of IUser stubs. &#xD;&#xA;Note that instances of this class is NOT Remote objects, that is, they are NOT an RMI server objects! &#xD;&#xA;Entire IChatRoom instances are sent to remote hosts, not stubs." item="_SFk-wEr4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OrI4MUr4EeOjKOOrIu014g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_SF1dcEr4EeOjKOOrIu014g" sourceConnectionVisual="_SF2EgEr4EeOjKOOrIu014g" text="concrete class to implements IChatRoom.&#xD;&#xA;@author Junnan&#xD;&#xA; *" item="_SF8LIEr4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OrKtYUr4EeOjKOOrIu014g"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:InterfaceVisual" xmi:id="_SFk-wEr4EeOjKOOrIu014g" comments="_SFgtUEr4EeOjKOOrIu014g" targetConnectionVisual="_SFh7cEr4EeOjKOOrIu014g" name="IChatRoom" associationsOut="_SFkXsEr4EeOjKOOrIu014g" subclassedBy="_SFv94Er4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OfdMoEr4EeOjKOOrIu014g"/>
+    <visualProperties xmi:id="_SFk-wUr4EeOjKOOrIu014g" position="11.0,31.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SFk-wkr4EeOjKOOrIu014g" label="+"/>
+    <attributes xmi:id="_SFk-w0r4EeOjKOOrIu014g" name="name">
+      <modelElement href="HW08_ChatRoom.uml#_OfdzsEr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SFk-xEr4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SFk-xUr4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+      <type xmi:id="_SFk-xkr4EeOjKOOrIu014g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SFk-x0r4EeOjKOOrIu014g" name="users">
+      <modelElement href="HW08_ChatRoom.uml#_OfeawEr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_SFk-yUr4EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_OffB0Er4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4KC-8Er5EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_OffB0Er4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SFk-ykr4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SFk-y0r4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+      <type xmi:id="_SFk-zEr4EeOjKOOrIu014g" name="Iterable">
+        <modelElement href="HW08_ChatRoom.uml#_Oo1yIEr4EeOjKOOrIu014g"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SFk-zUr4EeOjKOOrIu014g" name="addLocalUser">
+      <modelElement href="HW08_ChatRoom.uml#_Om7GkUr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SFk-zkr4EeOjKOOrIu014g" label="+"/>
+      <parameters xmi:id="_SFk-z0r4EeOjKOOrIu014g" name="newUserStub">
+        <modelElement href="HW08_ChatRoom.uml#_Om7Gkkr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SFk-0Er4EeOjKOOrIu014g" name="IUser">
+          <modelElement href="HW08_ChatRoom.uml#_Ofzx8Er4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SFk-0Ur4EeOjKOOrIu014g" name="removeLocalUser">
+      <modelElement href="HW08_ChatRoom.uml#_Om7toEr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SFk-0kr4EeOjKOOrIu014g" label="+"/>
+      <parameters xmi:id="_SFk-00r4EeOjKOOrIu014g" name="userStub">
+        <modelElement href="HW08_ChatRoom.uml#_Om7toUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SFk-1Er4EeOjKOOrIu014g" name="IUser">
+          <modelElement href="HW08_ChatRoom.uml#_Ofzx8Er4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SFk-1Ur4EeOjKOOrIu014g" name="sendMessage">
+      <modelElement href="HW08_ChatRoom.uml#_Oo2ZMEr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_SFk-1kr4EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_Oo3AQEr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SFk-10r4EeOjKOOrIu014g" label="+"/>
+      <outParameters xmi:id="_SFk-2Er4EeOjKOOrIu014g">
+        <modelElement href="HW08_ChatRoom.uml#_Oo3AQUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SFk-2Ur4EeOjKOOrIu014g" name="Iterable">
+          <modelElement href="HW08_ChatRoom.uml#_Oo1yIEr4EeOjKOOrIu014g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SFk-2kr4EeOjKOOrIu014g" name="dp">
+        <modelElement href="HW08_ChatRoom.uml#_Oo2ZMUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SFk-20r4EeOjKOOrIu014g" name="ADataPacket">
+          <modelElement href="HW08_ChatRoom.uml#_Om6fgEr4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_SF8LIEr4EeOjKOOrIu014g" comments="_SF1dcEr4EeOjKOOrIu014g" targetConnectionVisual="_SF2EgEr4EeOjKOOrIu014g" name="ChatRoom" associationsOut="_SF6V8Er4EeOjKOOrIu014g" generalizations="_SFv94Er4EeOjKOOrIu014g">
+    <modelElement href="HW08_ChatRoom.uml#_OgCbcEr4EeOjKOOrIu014g"/>
+    <visualProperties xmi:id="_SF8LIUr4EeOjKOOrIu014g" position="11.0,206.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_SF8LIkr4EeOjKOOrIu014g" label="+"/>
+    <attributes xmi:id="_SF8LI0r4EeOjKOOrIu014g" defaultValue="8889340129957225338L" name="serialVersionUID" staticAttribute="true">
+      <modelElement href="HW08_ChatRoom.uml#_Op9zgkr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SF8LJEr4EeOjKOOrIu014g" label="-"/>
+      <cardinality xmi:id="_SF8LJUr4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+      <type xmi:id="_SF8LJkr4EeOjKOOrIu014g" name="long">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SF8LJ0r4EeOjKOOrIu014g" name="userList">
+      <modelElement href="HW08_ChatRoom.uml#_Op-akUr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_SF8LKUr4EeOjKOOrIu014g" name="LegacyStyledElement">
+        <modelElement href="HW08_ChatRoom.uml#_Op_BoEr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <stereotypes xmi:id="_4KENEEr5EeOjKOOrIu014g" name="LegacyStyledElement">
+        <modelElement href="HW08_ChatRoom.uml#_Op_BoEr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SF8LKkr4EeOjKOOrIu014g" label="-"/>
+      <cardinality xmi:id="_SF8LK0r4EeOjKOOrIu014g" label="1..*" max="-1" min="1"/>
+      <type xmi:id="_SF8LLEr4EeOjKOOrIu014g" name="ProxyUser">
+        <modelElement href="HW08_ChatRoom.uml#_OgmcIEr4EeOjKOOrIu014g"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_SF8LLUr4EeOjKOOrIu014g" name="name">
+      <modelElement href="HW08_ChatRoom.uml#_Op_BoUr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SF8LLkr4EeOjKOOrIu014g" label="+"/>
+      <cardinality xmi:id="_SF8LL0r4EeOjKOOrIu014g" label="1" max="1" min="1"/>
+      <type xmi:id="_SF8LMEr4EeOjKOOrIu014g" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_SF8LMUr4EeOjKOOrIu014g" name="ChatRoom">
+      <modelElement href="HW08_ChatRoom.uml#_OgEQoEr4EeOjKOOrIu014g"/>
+      <keywords xmi:id="_SF8LMkr4EeOjKOOrIu014g" keyword="create"/>
+      <visibility xmi:id="_SF8LM0r4EeOjKOOrIu014g" label="+"/>
+      <outParameters xmi:id="_SF8LNEr4EeOjKOOrIu014g">
+        <modelElement href="HW08_ChatRoom.uml#_OgE3sUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LNUr4EeOjKOOrIu014g" name="ChatRoom">
+          <modelElement href="HW08_ChatRoom.uml#_OgCbcEr4EeOjKOOrIu014g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SF8LNkr4EeOjKOOrIu014g" name="s">
+        <modelElement href="HW08_ChatRoom.uml#_OgEQoUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LN0r4EeOjKOOrIu014g" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SF8LOEr4EeOjKOOrIu014g" name="getUsers">
+      <modelElement href="HW08_ChatRoom.uml#_OgFewEr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_SF8LOUr4EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_OgFewUr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SF8LOkr4EeOjKOOrIu014g" label="+"/>
+      <outParameters xmi:id="_SF8LO0r4EeOjKOOrIu014g">
+        <modelElement href="HW08_ChatRoom.uml#_Oo9t8Er4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LPEr4EeOjKOOrIu014g" name="Iterable">
+          <modelElement href="HW08_ChatRoom.uml#_Oo1yIEr4EeOjKOOrIu014g"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_SF8LPUr4EeOjKOOrIu014g" name="addLocalUser">
+      <modelElement href="HW08_ChatRoom.uml#_OnK-MUr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SF8LPkr4EeOjKOOrIu014g" label="+"/>
+      <parameters xmi:id="_SF8LP0r4EeOjKOOrIu014g" name="newUserStub">
+        <modelElement href="HW08_ChatRoom.uml#_OnK-Mkr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LQEr4EeOjKOOrIu014g" name="IUser">
+          <modelElement href="HW08_ChatRoom.uml#_Ofzx8Er4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SF8LQUr4EeOjKOOrIu014g" name="removeLocalUser">
+      <modelElement href="HW08_ChatRoom.uml#_OnLlQEr4EeOjKOOrIu014g"/>
+      <visibility xmi:id="_SF8LQkr4EeOjKOOrIu014g" label="+"/>
+      <parameters xmi:id="_SF8LQ0r4EeOjKOOrIu014g" name="userStub">
+        <modelElement href="HW08_ChatRoom.uml#_OnLlQUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LREr4EeOjKOOrIu014g" name="IUser">
+          <modelElement href="HW08_ChatRoom.uml#_Ofzx8Er4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_SF8LRUr4EeOjKOOrIu014g" name="sendMessage">
+      <modelElement href="HW08_ChatRoom.uml#_Oo-VAEr4EeOjKOOrIu014g"/>
+      <stereotypes xmi:id="_SF8LRkr4EeOjKOOrIu014g" name="Generics">
+        <modelElement href="HW08_ChatRoom.uml#_Oo-VAkr4EeOjKOOrIu014g"/>
+      </stereotypes>
+      <visibility xmi:id="_SF8LR0r4EeOjKOOrIu014g" label="+"/>
+      <outParameters xmi:id="_SF8LSEr4EeOjKOOrIu014g">
+        <modelElement href="HW08_ChatRoom.uml#_Oo-8EEr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LSUr4EeOjKOOrIu014g" name="Iterable">
+          <modelElement href="HW08_ChatRoom.uml#_Oo1yIEr4EeOjKOOrIu014g"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_SF8LSkr4EeOjKOOrIu014g" name="dp">
+        <modelElement href="HW08_ChatRoom.uml#_Oo-VAUr4EeOjKOOrIu014g"/>
+        <type xmi:id="_SF8LS0r4EeOjKOOrIu014g" name="ADataPacket">
+          <modelElement href="HW08_ChatRoom.uml#_Om6fgEr4EeOjKOOrIu014g"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
